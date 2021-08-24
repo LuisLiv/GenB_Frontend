@@ -8,6 +8,7 @@
     <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -36,7 +37,7 @@
     </nav>
 
     <header>
-      <div style="position: relative; background-image: url('img/freepik/produkbanner.jpg'); height: calc(80vh - 91.9px); background-size: cover;">
+      <div class="lozad" data-background-image="img/freepik/produkbanner.jpg" style="position: relative; height: calc(80vh - 91.9px); background-size: cover;">
         <div class="position-absolute" style="top: 10%; left: 5%;">
           <div class="container">
             <a class="text-white" href="index.html"><img src="img/arrow.png" class="arrow-left" width="20" /> Kembali Ke Awal</a>
@@ -58,28 +59,28 @@
                   <h4 class="font-weight-light">Terlalu sibuk dengan usaha sampai kewalahan mengelola akun media sosial? Tenang, percayakan saja pengelolaan akun media sosial Anda pada kami.</h4>
                 </div>
             </div>
-            <div class="float-right product shadow" style="background: url('img/freepik/2104041.jpg') no-repeat; background-size: cover;"></div>
+            <div class="lozad float-right product shadow" data-background-image="img/freepik/2104041.jpg" style="background-size: cover;"></div>
             <div class="float-right product">
                 <div class="container p-5 text-right">
                   <h1 class="font-weight-bold mb-5">Content Marketing</h1>
                   <h4 class="font-weight-light">Dengan tim yang andal dan berpengalaman di bidangnya, kami selalu siap menyediakan konten marketing yang sesuai dengan usaha Anda. Dapatkan konten berkualitas nan penuh kreatifitas dari GenB.</h4>
                 </div>
             </div>
-            <div class="float-left product shadow" style="background: url('img/freepik/beautiful-hand-painted-mandala-black-background.jpg') no-repeat; background-size: cover;"></div>
+            <div class="lozad float-left product shadow" data-background-image="img/freepik/beautiful-hand-painted-mandala-black-background.jpg" style="background-size: cover;"></div>
               <div class="float-left product">
                 <div class="container p-5 text-left">
                   <h1 class="font-weight-bold mb-5">Branding and Design</h1>
                   <h4 class="font-weight-light">Bingung ingin ditampilkan seperti apa barang atau jasa yang Anda jual ke hadapan calon pembeli? Dapatkan berbagai referensi tentang branding hanya dari tim GenB.</h4>
                 </div>
             </div>
-            <div class="float-right product shadow" style="background: url('img/freepik/colorful-epoxy-resin-art.jpg') no-repeat; background-size: cover;"></div>
+            <div class="lozad float-right product shadow" data-background-image="img/freepik/colorful-epoxy-resin-art.jpg" style="background-size: cover;"></div>
               <div class="float-right product">
                 <div class="container p-5 text-right">
                   <h1 class="font-weight-bold mb-5">Photography</h1>
                   <h4 class="font-weight-light">Percayakan foto barang atau jasa Anda pada ahlinya. GenB siap menyajikan foto dari sudut paling menarik dari barang atau jasa yang Anda pasarkan.</h4>
                 </div>
             </div>
-            <div class="float-left product shadow" style="background: url('img/freepik/high-angle-greyscale-shot-highway-with-many-cars-madrid-spain.jpg') no-repeat; background-size: cover;"></div>
+            <div class="lozad float-left product shadow" data-background-image="img/freepik/high-angle-greyscale-shot-highway-with-many-cars-madrid-spain.jpg" style="background-size: cover;"></div>
         </div>
     </section>
 
@@ -111,5 +112,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <script>
+      const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+      observer.observe();
+    </script>
+  </body>
 </html>
